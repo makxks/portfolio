@@ -42,6 +42,7 @@
 
 .content-tech, .content-connections {
   background-color: var(--main-color);
+  padding-bottom: 20px;
 }
 
 .content-connections {
@@ -50,7 +51,7 @@
 
 .content-tech p {
   text-align: center;
-  padding-left: 0;
+  padding: 20px 0;
 }
 
 .tour {
