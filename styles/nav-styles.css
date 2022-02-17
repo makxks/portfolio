@@ -1,0 +1,243 @@
+/* --------------------------------------*/
+/* Nav styles */
+/* --------------------------------------*/
+
+.nav-container {
+  width: 100%;
+  background-color: var(--accent-color);
+  top: 50px;
+  left: 0;
+  height: 100px;
+  transition: all 0.5s;
+  z-index: 6;
+}
+
+.nav {
+  margin-left: 20%;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-left-container {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 5vw;
+  z-index: 5
+}
+
+.nav-left {
+  position: relative;
+  background-color: var(--main-color);
+  border-right: 2px solid var(--accent-color);
+  width: 100%;
+  height: 100%;
+  left: -7vw;
+  transition: all 0.4s ease-in;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px;
+  z-index: 10;
+}
+
+.nav-fader {
+  top: 5000px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  background-color: var(--main-color);
+  transition: opacity 0.4s;
+  z-index: 0;
+}
+
+.nav-left-on {
+  left: -3.5vw;
+}
+
+.nav-fixed {
+  position: fixed;
+}
+
+.nav-left-hoverable:hover {
+  left: -3vw;
+}
+
+/* --------------------------------------*/
+/* Nav buttons styles */
+/* --------------------------------------*/
+
+.nav-button {
+  top: 0;
+  color: var(--secondary-text-color);
+  background-color: var(--main-color);
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.4s ease-out;
+  z-index: 2;
+  width: 30%;
+}
+
+.nav-button:hover {
+  color: var(--accent-text-color);
+  top: -5px;
+}
+
+.nav-button::before {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease-out;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+
+.nav-button:hover::after {
+  top: 0;
+}
+
+.nav-left-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--accent-color);
+  background-color: var(--main-color);
+  border-radius: 15px;
+  margin: 30px 0;
+  left: 2.5vw;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#me-button-left::after, #tech-button-left::after, #projects-button-left::after, #other-button-left::after {
+  position: relative;
+  font-family: "Exo", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  left: -25vw;
+  top: -3px;
+  transition: all 0.2s ease-in;
+  color: var(--main-text-color);
+  /*-webkit-text-stroke: 1px var(--main-text-color);*/
+}
+
+#me-button-left::after {
+  content: "Me";
+}
+
+#tech-button-left::after {
+  content: "Technologies";
+}
+
+#projects-button-left::after {
+  content: "Projects";
+}
+
+#other-button-left::after {
+  content: "Connections";
+}
+
+#me-button-left:hover, #tech-button-left:hover, #projects-button-left:hover, #other-button-left:hover {
+  border-color: var(--main-color);
+  background-color: var(--accent-color);
+}
+
+#me-button-left:hover::after, #tech-button-left:hover::after, #projects-button-left:hover::after, #other-button-left:hover::after {
+  left: 3vw;
+}
+
+/* --------------------------------------*/
+/* Nav styles media queries */
+/* --------------------------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .nav-container {
+    height: 50px;
+    position: sticky;
+  }
+
+  .nav {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-left {
+    left: -100vw;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .nav-container {
+    height: 50px;
+    position: sticky;
+  }
+
+  .nav {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-left {
+    left: -100vw;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .nav-container {
+    height: 80px;
+    position: static;
+    top: 80px;
+  }
+
+  .nav {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .nav-left {
+    left: -7vw;
+  }
+
+  .nav-left-on {
+    left: -3vw;
+  }
+
+  .nav-left-hoverable:hover {
+    left: -2.5vw;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .nav-left-on {
+    left: -3.5vw;
+  }
+
+  .nav-left-hoverable:hover {
+    left: -3vw;
+  }
+}

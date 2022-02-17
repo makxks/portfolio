@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset-styles.css">
+  <link rel="stylesheet" href="./styles/root-styles.css">
+  <link rel="stylesheet" href="./styles/general-styles.css">
+  <link rel="stylesheet" href="./styles/header-styles.css">
+  <link rel="stylesheet" href="./styles/nav-styles.css">
+  <link rel="stylesheet" href="./styles/intro-styles.css">
+  <link rel="stylesheet" href="./styles/section-styles.css">
+  <link rel="stylesheet" href="./styles/footer-styles.css">
+  <link rel="stylesheet" href="./styles/element-styles.css">
+  <link rel="stylesheet" href="./styles/modifiers.css">
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap");
+  </style>
+  <title>Max Platt Portfolio</title>
+</head>
+<body>
+  <header id="header" class="header sticky">
+    <h1 id="header-title" class="header-title">MAX PLATT</h1>
+    <div class="header-option">
+      <span class="header-option-circle"><!-- circle showing current theme colour here --></span>
+      <span class="header-option-arrow"><!-- add arrow here --></span>
+      <div class="header-option-dropdown">
+        <span class="theme-circle" id="theme-bw"></span>
+        <span class="theme-circle" id="theme-1"></span>
+        <span class="theme-circle" id="theme-2"></span>
+        <span class="theme-circle" id="theme-3"></span>
+        <span class="theme-circle" id="theme-4"></span>
+        <span class="theme-circle" id="theme-5"></span>
+      </div>
+    </div>
+  </header>
+  <div class="arrow-container"><span class="arrow"></span></div>
+  <section id="intro">
+    <h1>Hi!</h1>
+    <h1 id="intro-line">I'm Max</h1>
+    <h2>Web Developer</h2>
+  </section>
+  <nav class="nav-container">
+    <ul class="nav">
+      <li class="button nav-button" id="other-button">CONNECTIONS</li>
+      <li class="button nav-button" id="projects-button">PROJECTS</li>
+      <li class="button nav-button" id="tech-button">TECHNOLOGIES</li>
+      <li class="button nav-button" id="me-button">ME</li>
+    </ul>
+  </nav>
+  <nav class="nav-left-container nav-fixed">
+    <ul class="nav-left nav-left-hoverable">
+      <button class="nav-left-button" id="other-button-left"></button>
+      <button class="nav-left-button" id="projects-button-left"></button>
+      <button class="nav-left-button" id="tech-button-left"></button>
+      <button class="nav-left-button" id="me-button-left"></button>
+    </ul>
+    <span class="nav-fixed nav-fader"></span>
+  </nav>
+  <section class="tour">
+    <section class="tour-content" id="arrow-target">
+      <span class="circle circle-scale"><span class="inner-circle"></span></span>
+      <span class="circle2 circle-scale"></span>
+      <span class="circle3 circle-scale"></span>
+      <section class="tour-content-text">
+        <h1 class="tour-content-text-heading"></h1>
+      </section>
+      <span class="tour-section horizontal-gradient"></span>
+    </section>
+  </section>
+  <section class="content">
+    <section class="main-content content-connections">
+      <h2 class="content-subtitle sticky" id="content-other">Connections</h2>
+        <h2 class="content-tagline">You can find me here</h2>
+        <div class="connections">
+          <a href="https://github.com/makxks"><img src="./fonts_symbols/github.png"/></a>
+          <a href="https://www.linkedin.com/in/max-platt-b36b2445/"><img src="./fonts_symbols/linked.png"/></a>
+          <a href="mailto:maxplatt@outlook.com"><img src="./fonts_symbols/email.png"/></a>
+        </div>
+    </section>
+    <h2 class="content-subtitle sticky" id="content-projects">Projects</h2>
+    <span id="content-projects-marker"></span>
+    <h2 class="content-tagline">I like to make things</h2>
+    <section class="projects">
+      <section class="project" id="card-classtracker">
+        <section class="project-content project-content-left">
+          <project-card scrnShot="./images/classtracker-1.png">
+            <span slot="project-name">ClassTracker</span>
+            <span slot="project-description">A MEAN stack application to help teachers at an English training school in China keep track of classes and lessons.</span>
+          </project-card>
+        </section>
+      </section>
+      <section class="project" id="card-familyphoto">
+        <section class="project-content project-content-right">
+          <project-card scrnShot="./images/fpa-1.png">
+            <span slot="project-name">Family Photo Album</span>
+            <span slot="project-description">A Python Flask application with SQLite storage intended to share photos and photo albums with family.</span>
+          </project-card>
+        </section>
+      </section>
+      <section class="project" id="card-jsapps">
+        <section class="project-content project-content-left">
+          <project-card scrnShot="./images/jsa-eas1.png">
+            <span slot="project-name">Javascript Applications</span>
+            <span slot="project-description">Various small vanilla javascript applications.</span>
+          </project-card>
+        </section>
+      </section>
+      <section class="project" id="card-games">
+        <section class="project-content project-content-right">
+          <project-card scrnShot="./images/games-spark-2.png">
+            <span slot="project-name">Games</span>
+            <span slot="project-description">Two games built with Unity and C#.</span>
+          </project-card>
+        </section>
+      </section>
+    </section>
+    <project-detail id="project-classtracker" scrnShot1="./images/classtracker-2.png" scrnShot2="./images/classtracker-4.png">
+      <span slot="project-links-1">The project can be found <a href="https://class-tracker.herokuapp.com/">here</a>, and the github repository can be found <a href="https://github.com/makxks/ClassTracker">here</a>.</span>
+      <span slot="project-description-long-1">
+        The classtracker is a MEAN stack application designed to help teachers manage classes and lessons at an English training school in China.
+      </span>
+      <span slot="project-links-2"></span>
+      <span slot="project-description-long-2">
+        Teachers can add their own classes to a class list, along with the class times and comments on the class,
+        add students to those classes along with various comments, add and edit lesson across the curriculum and add those lessons to timeslots of classes.
+        These lessons then show up in teachers own schedule and are able to be exported to an excel file.
+        Although there is no direct communication function, teachers are able to share classes to other teachers who will support in the teaching of those classes,
+        and through comments on activities and other areas teachers are able to share ideas about lessons.
+      </span>
+    </project-detail>
+    <project-detail id="project-familyphoto" scrnShot1="./images/fpa-3.png" scrnShot2="./images/fpa-2.png">
+      <span slot="project-links-1">The project can be found <a href="http://maxplatt.pythonanywhere.com/">here</a>, and the github repository can be found <a href="https://github.com/makxks/familyphotoalbum">here</a>.</span>
+      <span slot="project-description-long-1">
+        Family Photo Album is a Python Flask application inspired by the current COVID situation to help share photos with family and friends easily. As I am living in
+        China and most of my family live in England this was something that I would like to be easier than sharing small groups of photos on social media (especially in China)
+        or directly through different chatting apps. The app is built in Flask and templated with Jinja. The image files are stored on the file system of the server and accessed
+        through the SQLite database.
+      </span>
+      <span slot="project-links-2"></span>
+      <span slot="project-description-long-2">
+        Users can create albums and upload photos to the albums, with some small editing abilities for the photos (mainly just the ability
+        to rotate the images to make sure they are in the intended aspect). These albums can then be shared with other users directly by sharing to a username, or shared through
+        the created links to both users or non-users. Individual photos can be shared to other users.
+      </span>
+    </project-detail>
+    <project-detail id="project-jsapps" scrnShot1="./images/jsa-calc.png" scrnShot2="./images/jsa-eas.png">
+      <span slot="project-links-1">The calculator project can be found <a href="https://makxks.github.io/Calculator/">here</a>, and the github repository can be found <a href="https://github.com/makxks/Calculator">here</a>.</span>
+      <span slot="project-description-long-1">
+        This is a calculator build in HTML CSS and Javascript. The operations of the calculator should all behave as expected and behave according
+        to the current state of the calculator.
+      </span>
+      <span slot="project-links-2">The drawing project can be found <a href="https://makxks.github.io/etch-a-sketch/">here</a>, and the github repository can be found <a href="https://github.com/makxks/etch-a-sketch">here</a>.</span>
+      <span slot="project-description-long-2">
+        An 'etch-a-sketch' with added functionality. Drawing can be done like an etch-a-sketch toy (on hover) or by click. There are options for random
+        colours, colour selection, opacity drawing, and erasing. The pixel size of the canvas can also be changed.
+      </span>
+    </project-detail>
+    <project-detail id="project-games" scrnShot1="./images/games-spark-1.png" scrnShot2="./images/games-network-2.png">
+      <span slot="project-links-1">Spark can be found <a href="https://makxks.github.io/Spark/">here</a>, and the github repository can be found <a href="https://github.com/makxks/Spark">here</a>. Spark is also downloadable from the Google Play Store for Android <a href="https://play.google.com/store/apps/details?id=com.Max.Spark">here</a>.</span>
+      <span slot="project-description-long-1">
+        Spark was created in Unity with C#. It is an endless, procedurally generated game in which
+        the played jumps the titular spark across rings as far as possible before it runs out of charge.
+      </span>
+      <span slot="project-links-2">Network can be found <a href="https://makxks.github.io/Network/">here</a>, and the github repository can be found <a href="https://github.com/makxks/Network">here</a>. Network is also downloadable from the Google Play Store for Android <a href="https://play.google.com/store/apps/details?id=com.Max.Network">here</a>.</span>
+      <span slot="project-description-long-2">
+        Network was created in Unity with C#. It is a procedurally created package delivery game. There is
+        also a custom level option with options for package, and node numbers, which can result in extremely large or small
+        networks.
+      </span>
+    </project-detail>
+    <h2 class="content-subtitle sticky" id="content-tech">Technologies</h2>
+    <section class="content-tech">
+      <p>Technologies I currently use</p>
+      <div class="technologies">
+        <img src="./fonts_symbols/html5.png"/>
+        <img src="./fonts_symbols/css3.png"/>
+        <img src="./fonts_symbols/js.png"/>
+        <img src="./fonts_symbols/angular_solidBlack.png"/>
+        <img src="./fonts_symbols/node.png"/>
+        <img src="./fonts_symbols/git.png"/>
+      </div>
+      <div class="technologies">
+        <img src="./fonts_symbols/mongo.png"/>
+        <img src="./fonts_symbols/sqlite.png"/>
+        <img src="./fonts_symbols/python.png"/>
+        <img src="./fonts_symbols/ruby.png"/>
+        <img src="./fonts_symbols/c.png"/>
+      </div>
+    </section>
+
+    <h2 class="content-subtitle sticky" id="content-me">Me</h2>
+    <section class="content-me">
+      <span id="content-me-marker"></span>
+      <h2 class="content-tagline">A little bit more about me</h2>
+      <h2 class="content-tagline">Background & Current Situation</h2>
+      <p>I am originally from England and I currently live in Beijing China. I have been in China for the last 8 years working as an English teacher. I have picked up a fair amount of Chinese,
+      my family is here and I am looking to make a permanent switch to a full-time web development position.</p>
+      <h2 class="content-tagline">I'm learning all the time</h2>
+      <p>Throughout the last few years I have used my free time to study. I have spent time studying Harvard's CS50 course, The Odin Project, the basics of HTML, CSS, and Javascript, as well as
+      some time on Angular Python Ruby and C#. While there have been (perhaps) wide-ranging subjects, they have all helped me to develop a certain kind of thinking that has improved my problem
+      solving and identification. As I come across more problems I find new and better ways to solve them.</p>
+      <p>I am always finding new things to improve on and learn more about. I am still learning a lot about Angular (as well as looking more into React and Vue), and also learning about the shadow DOM
+      and different ways to do things without using a framework or so many libraries - this page for example uses HTML CSS and JS utilising web components.
+      I am always trying to bolster my knowledge about web foundations such as HTTP, DNS, TCP/IP.</p>
+      <h2 class="content-tagline">Looking forward</h2>
+      <p>I'm looking for opportunities where I can show what I have learned, and have a chance to learn and develop a lot more.</p>
+    </section>
+
+  </section>
+
+  <footer>
+  </footer>
+</body>
+</html>
+<script type="text/javascript" src="./scripts/scripts.js"></script>
+<script type="text/javascript" src="./scripts/text.js"></script>
+<script type="text/javascript" src="./scripts/squares.js"></script>
+<script type="text/javascript" src="./scripts/circles.js"></script>
+<script type="text/javascript" src="./scripts/scrolls.js"></script>
+<script type="text/javascript" src="./scripts/arrow.js"></script>
+<script type="text/javascript" src="./scripts/project-card.js"></script>
+<script type="text/javascript" src="./scripts/project-detail.js"></script>
+<script type="text/javascript" src="./scripts/projects.js"></script>
+<script type="text/javascript" src="./scripts/themes.js"></script>

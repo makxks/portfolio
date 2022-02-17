@@ -1,0 +1,88 @@
+/* --------------------------------------*/
+/* Root variables */
+/* --------------------------------------*/
+
+:root {
+  /* grayscale */
+
+  /*
+  --base-color: white;
+  --main-color: black;
+  --secondary-color: #333;
+  --accent-color: lightgray;
+
+  --main-text-color: white;
+  --secondary-text-color: black;
+  --accent-text-color: #333;
+  --default-text: #AAA;
+  */
+
+  /* color 1 */
+/* 
+  --base-color: #222;
+  --main-color: #3d5a80;
+  --secondary-color: #98C1D9;
+  --accent-color: #EE6C4D;
+
+  --main-text-color: #E5E5E5;
+  --secondary-text-color: #E0FBFC;
+  --accent-text-color: #293241;
+  --default-text: #CCC; */
+
+  /* color 2 */
+/*
+  --base-color: #555;
+  --main-color: #52796F;
+  --secondary-color: #84A98C;
+  --accent-color: #2F3E46;
+
+  --main-text-color: #CAD2C5;
+  --secondary-text-color: #1A2729;
+  --accent-text-color: #CAD2C5;
+  --default-text: #DDD; */
+
+  /* color 3 */
+/*
+  --base-color: #12122A;
+  --main-color: #4A4E69;
+  --secondary-color: #22223B;
+  --accent-color: #9A8C98;
+
+  --main-text-color: #C9ADA7;
+  --secondary-text-color: #F2E9E4;
+  --accent-text-color: #F2E9E4;
+  --default-text: #AAA; */
+
+  /* color 4 */
+/*
+  --base-color: #14213D;
+  --main-color: #FCA311;
+  --secondary-color: #14213D;
+  --accent-color: #000000;
+
+  --main-text-color: #E5E5E5;
+  --secondary-text-color: #FFFFFF;
+  --accent-text-color: #FCA311;
+  --default-text: #AAA; */
+
+  /* color 5 */
+
+  --base-color: #121212;
+  --main-color: #403D39;
+  --secondary-color: #252422;
+  --accent-color: #EB5E28;
+
+  --main-text-color: #FFFCF2;
+  --secondary-text-color: #CCC5B9;
+  --accent-text-color: #FFFCF2;
+  --default-text: #DDD;
+
+
+  /* --main-color-light: hsl(from var(--main-color) h s calc(l * 1.5));
+  --secondary-color-light: hsl(from var(--secondary-color) h s calc(l * 1.5));
+  --accent-color-light: hsl(from var(--accent-color) h s calc(l * 1.5));
+
+  --main-color-dark: hsl(from var(--main-color) h s calc(l * 0.5));
+  --secondary-color-dark: hsl(from var(--secondary-color) h s calc(l * 0.5));
+  --accent-color-dark: hsl(from var(--accent-color) h s calc(l * 0.5)); */
+}

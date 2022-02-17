@@ -1,0 +1,105 @@
+/* --------------------------------------*/
+/* Project card styles */
+/* --------------------------------------*/
+
+h1, h2 {
+    font-family: "Exo", sans-serif;
+    z-index: 2;
+    color: var(--main-text-color);
+}
+  
+p {
+    padding-top: 1vh;
+    color: var(--main-text-color);
+}
+
+h1 {
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+.project-content-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.project-card img {
+    width: 250px;
+    margin: 25px;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+/* --------------------------------------*/
+/* Project card styles media queries */
+/* --------------------------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+      .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+      
+      h2 {
+          font-size: 1.25em;
+      }
+    }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .project-card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+      }
+
+      h1 {
+        font-size: 4em;
+      }
+      
+      h2 {
+          font-size: 1.5em;
+      }
+    }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .project-card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      h1 {
+        font-size: 6em;
+      }
+      
+      h2 {
+          font-size: 2.5em;
+      }
+    }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  
+  }
