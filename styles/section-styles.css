@@ -198,6 +198,9 @@
 
   .projects {
     grid-template-columns: 100%;
+  }
+
+  .project {
     height: 350px;
   }
 
@@ -220,6 +223,9 @@
 
   .projects {
     grid-template-columns: 100%;
+  }
+
+  .project {
     height: 350px;
   }
 
@@ -236,6 +242,9 @@
 
   .projects {
     grid-template-columns: 100%;
+  }
+
+  .project {
     height: 350px;
   }
 
@@ -252,6 +261,10 @@
 
   .projects {
     grid-template-columns: 100%;
+  }
+
+  .project {
+    height: 250px;
   }
 }
 
