@@ -233,7 +233,7 @@
   }
 
   .projects {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
   }
 
   .project-scaled {
@@ -245,5 +245,15 @@
 @media only screen and (min-width: 992px) {
   .content-subtitle {
     top: 50px;
+  } 
+
+  .projects {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .projects {
+    grid-template-columns: 50% 50%;
   }
 }
