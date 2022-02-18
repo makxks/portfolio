@@ -1,3 +1,4 @@
+let projects = $(".projects");
 let isShowing = false;
 
 function toggleProjectDetails(elementToShow, projectToShow, cards){
@@ -24,20 +25,23 @@ function moveCards(elementToShow, cards){
                 let topValue;
                 if(body.offsetWidth < 1200){
                     topValue = -1 * ((100 * index) - 50);
+                    elementToShow.children[0].classList.add("project-being-shown");
+                    projects.classList.add("projects-one");
                 }
                 else {
                     topValue = -1 * ((100 * Math.floor(index / 2)) - 50);
                     if(index % 2 == 1){
-                        elementToShow.children[0].classList.add("project-centered-right", "project-scaled");
+                        elementToShow.children[0].classList.add("project-being-shown", "project-centered-right", "project-scaled");
                     } else {
-                        elementToShow.children[0].classList.add("project-centered-left", "project-scaled");
+                        elementToShow.children[0].classList.add("project-being-shown", "project-centered-left", "project-scaled");
                     }
                 }
                 elementToShow.children[0].style.top = "" + topValue + "%";
             }
         });
     } else {
-      cards.forEach((card, index) => {
+        projects.classList.remove("projects-one");
+        cards.forEach((card, index) => {
           if(card != elementToShow){
               card.children[0].classList.add("project-content-on");
           }

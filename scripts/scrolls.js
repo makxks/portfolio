@@ -62,7 +62,7 @@ window.addEventListener("scroll", (e) => {
   function checkProjectDetailsOn(isOn){
     let projectShowing = false;
     projects.forEach((project) => {
-      if(project.classList.contains('project-centered-left') || project.classList.contains('project-centered-right')){
+      if(project.classList.contains("project-being-shown" || 'project-centered-left') || project.classList.contains('project-centered-right')){
         projectShowing = true;
       }
     })

@@ -106,6 +106,10 @@
   padding-bottom: 5%;
 }
 
+.projects-one {
+  height: 500px;
+}
+
 .project {
   display: flex;
   flex-direction: column;
