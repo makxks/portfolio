@@ -22,7 +22,7 @@ function moveCards(elementToShow, cards){
             }
             if(card == elementToShow){
                 let topValue;
-                if(body.offsetWidth < 768){
+                if(body.offsetWidth < 1200){
                     topValue = -1 * ((100 * index) - 50);
                 }
                 else {
