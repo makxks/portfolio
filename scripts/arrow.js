@@ -1,3 +1,6 @@
+let arrowStart = 15;
+let arrowTarget = 30;
+
 function moveArrow(targetY, startY, duration){
   let start;
 
@@ -19,4 +22,11 @@ function moveArrow(targetY, startY, duration){
   })
 }
 
-moveArrow(30, 15, 1000);
+function setArrowPosition(){
+  arrowStart = body.offsetWidth < 600 ? 0 : 15;
+  arrowTarget = body.offsetWidth < 600 ? 10 : 30;
+}
+
+setArrowPosition();
+
+moveArrow(arrowTarget, arrowStart, 1000);
