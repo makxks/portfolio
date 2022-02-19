@@ -107,7 +107,7 @@
 }
 
 .projects-one {
-  height: 500px;
+  height: 350px;
 }
 
 .project {
@@ -236,6 +236,10 @@
   .project-scaled {
     transform: scale(1);
   }
+
+  .projects-one {
+    height: 400px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -255,6 +259,10 @@
   .project-scaled {
     transform: scale(1.5);
   }
+
+  .projects-one {
+    height: 400px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -269,6 +277,10 @@
 
   .project {
     height: 250px;
+  }
+
+  .projects-one {
+    height: 350px;
   }
 }
 

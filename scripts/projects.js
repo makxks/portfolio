@@ -24,7 +24,7 @@ function moveCards(elementToShow, cards){
             if(card == elementToShow){
                 let topValue;
                 if(body.offsetWidth < 1200){
-                    topValue = -1 * ((100 * index) - 50);
+                    topValue = -1 * (100 * index);
                     elementToShow.children[0].classList.add("project-being-shown");
                     projectsContainer.classList.add("projects-one");
                 }
