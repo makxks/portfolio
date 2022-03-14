@@ -1,0 +1,54 @@
+/* --------------------------------------*/
+
+
+/* Modal styles */
+
+
+/* --------------------------------------*/
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 20;
+}
+
+.modal-background {
+    background-color: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 15;
+    display: none;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content img {
+    height: 910px;
+    width: 1200px;
+    z-index: 100;
+}
+
+.modal-caller {
+    cursor: pointer;
+}
