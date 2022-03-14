@@ -1,9 +1,9 @@
 let textEl = $(".tour-content-text-heading");
 
-function setText(text){
-  textEl.innerHTML = text;
+function setText(text) {
+    textEl.innerHTML = text;
 }
 
-function showHideText(opacity){
-  textEl.style.opacity = opacity;
+function showHideText(opacity) {
+    textEl.style.opacity = opacity;
 }

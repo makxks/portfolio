@@ -1,7 +1,7 @@
-
 // Scripts for Portfolio page
-function $(selector){ return document.querySelector(selector) };
-function $all(selector){ return document.querySelectorAll(selector) };
+function $(selector) { return document.querySelector(selector) };
+
+function $all(selector) { return document.querySelectorAll(selector) };
 
 let title = $("#header-title");
 let body = $("body");
@@ -56,16 +56,16 @@ jsaCard.addEventListener("click", () => { toggleProjectDetails(jsaCard, jsaDetai
 gamesCard.addEventListener("click", () => { toggleProjectDetails(gamesCard, gamesDetails, projectCards); });
 
 navLeft.addEventListener("mouseover", () => {
-  fader.style.top = "0";
-  fader.style.opacity = "0.6";
-  fader.style.zIndex = "6";
+    fader.style.top = "0";
+    fader.style.opacity = "0.6";
+    fader.style.zIndex = "6";
 });
 navLeft.addEventListener("mouseout", () => {
-  fader.style.opacity = "0";
-  fader.style.zIndex = "0";
+    fader.style.opacity = "0";
+    fader.style.zIndex = "0";
 });
 fader.addEventListener("transitionend", (e) => {
-  if(e.propertyName == "opacity" && fader.style.opacity == "0"){
-    fader.style.top = "5000px";
-  }
+    if (e.propertyName == "opacity" && fader.style.opacity == "0") {
+        fader.style.top = "5000px";
+    }
 })

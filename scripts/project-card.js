@@ -15,14 +15,14 @@ cardStyles.setAttribute("rel", "stylesheet");
 cardStyles.setAttribute("href", "./styles/project-card-styles.css");
 
 class ProjectCard extends HTMLElement {
-  constructor(){
-    super();
+    constructor() {
+        super();
 
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(cardTemplate.content.cloneNode(true));
-    this.shadowRoot.appendChild(cardStyles.cloneNode(true));
-    this.shadowRoot.querySelector("img").src = this.getAttribute("scrnShot");
-  }
+        this.attachShadow({ mode: "open" });
+        this.shadowRoot.appendChild(cardTemplate.content.cloneNode(true));
+        this.shadowRoot.appendChild(cardStyles.cloneNode(true));
+        this.shadowRoot.querySelector("img").src = this.getAttribute("scrnShot");
+    }
 }
 
 window.customElements.define("project-card", ProjectCard);
