@@ -1,9 +1,13 @@
 /* --------------------------------------*/
+
+
 /* Footer styles */
+
+
 /* --------------------------------------*/
 
 footer {
-  width: 100%;
-  background-color: var(--secondary-color);
-  height: 70px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 70px;
 }

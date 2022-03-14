@@ -1,291 +1,296 @@
 /* --------------------------------------*/
+
+
 /* Section styles */
+
+
 /* --------------------------------------*/
 
 .content {
-  height: 100%;
-  background-color: var(--base-color);
+    height: 100%;
+    background-color: var(--base-color);
 }
 
 .content-me {
-  height: 100%;
-  width: 100%;
-  padding: 0 10%;
-  padding-bottom: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 0 10%;
+    padding-bottom: 20px;
 }
 
 .content-me p {
-  padding: 10px;
-  padding-left: 5%;
+    padding: 10px;
+    padding-left: 5%;
 }
 
 .content-subtitle {
-  height: 50px;
-  background-color: var(--accent-color);
-  color: var(--accent-text-color);
-  font-size: 2.5em;
-  padding-left: 0;
-  text-align: center;
-  z-index: 4;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+    font-size: 2.5em;
+    padding-left: 0;
+    text-align: center;
+    z-index: 4;
 }
 
 .content-tagline {
-  padding: 20px 0;
-  text-align: center;
-  font-size: 1.5em;
-  color: var(--main-text-color);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--main-text-color);
 }
 
 .main-content h1 {
-  color: var(--main-color);
+    color: var(--main-color);
 }
 
-.content-tech, .content-connections {
-  background-color: var(--main-color);
-  padding-bottom: 20px;
+.content-tech,
+.content-connections {
+    background-color: var(--main-color);
+    padding-bottom: 20px;
 }
 
 .content-connections {
-  padding-bottom: 3%;
+    padding-bottom: 3%;
 }
 
 .content-tech p {
-  text-align: center;
-  padding: 20px 0;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .tour {
-  background: var(--secondary-color);
-  height: 100vh;
-  overflow: hidden;
+    background: var(--secondary-color);
+    height: 100vh;
+    overflow: hidden;
 }
 
 .tour-content {
-  position: relative;
-  height: 100vh;
-  padding: 5%;
+    position: relative;
+    height: 100vh;
+    padding: 5%;
 }
 
 .horizontal-gradient {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, var(--secondary-color) -20% -10%, var(--main-color) 95% 100%);
-  opacity: 0;
-  transition: opacity 2s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary-color) -20% -10%, var(--main-color) 95% 100%);
+    opacity: 0;
+    transition: opacity 2s;
 }
 
 .tour-content-text {
-  height: 90vh;
-  position: relative;
-  z-index: 4;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  top: -5%;
+    height: 90vh;
+    position: relative;
+    z-index: 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: -5%;
 }
 
 .tour-content-text h1 {
-  padding: 0;
-  opacity: 0;
-  color: var(--main-text-color);
-  transition: opacity 1s;
-  width: 70%;
+    padding: 0;
+    opacity: 0;
+    color: var(--main-text-color);
+    transition: opacity 1s;
+    width: 70%;
 }
 
 .projects {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  overflow: hidden;
-  padding-bottom: 5%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+    padding-bottom: 5%;
 }
 
 .projects-one {
-  height: 350px;
+    height: 350px;
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 250px;
-  width: 80%;
-  margin-left: 10%;
-  transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 80%;
+    margin-left: 10%;
+    transition: all 0.5s;
 }
 
 .project-content {
-  position: relative;
-  height: 90%;
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
-  border-radius: 20px;
-  background-color: transparent;
-  box-shadow: none;
-  left: 0;
-  top: 0;
-  transition: left 0.6s, right 0.6s, top 0.6s, bottom 0.6s, color 0.4s, box-shadow 0.4s, background-color 0.4s, transform 0.6s;
-  cursor: pointer;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: none;
+    left: 0;
+    top: 0;
+    transition: left 0.6s, right 0.6s, top 0.6s, bottom 0.6s, color 0.4s, box-shadow 0.4s, background-color 0.4s, transform 0.6s;
+    cursor: pointer;
 }
 
 .project-content-left {
-  left: -3000px;
+    left: -3000px;
 }
 
 .project-content-right {
-  left: 3000px;
+    left: 3000px;
 }
 
 .project-content-on {
-  left: 0;
+    left: 0;
 }
 
 .project-centered-left {
-  left: 60%;
+    left: 60%;
 }
 
 .project-centered-right {
-  left: -60%;
+    left: -60%;
 }
 
 .project-scaled {
-  transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 .project-content:hover {
-  color: var(--main-text-color);
-  box-shadow: 0 0 10px 10px var(--accent-color);
-  background-color: var(--main-color);
+    color: var(--main-text-color);
+    box-shadow: 0 0 10px 10px var(--accent-color);
+    background-color: var(--main-color);
 }
 
-.technologies, .connections {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+.technologies,
+.connections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .connections {
-  width: 50%;
-  margin-left: 25%;
+    width: 50%;
+    margin-left: 25%;
 }
 
-.technologies img, .connections img {
-  width: 100px;
+.technologies img,
+.connections img {
+    width: 100px;
 }
 
 .connections img {
-  border-radius: 20%;
+    border-radius: 20%;
 }
 
 .connections img:hover {
-  box-shadow: 0 0 3px 3px var(--accent-color), 0 0 3px 3px var(--accent-color);
+    box-shadow: 0 0 3px 3px var(--accent-color), 0 0 3px 3px var(--accent-color);
 }
 
+
 /* --------------------------------------*/
+
+
 /* Section styles media queries */
+
+
 /* --------------------------------------*/
+
 
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
-  .content-subtitle {
-    top: 100px;
-  }
-
-  .projects {
-    grid-template-columns: 100%;
-  }
-
-  .project {
-    height: 350px;
-  }
-
-  .tour-content {
-    position: relative;
-    height: 100vh;
-    padding: 1%;
-  }
-
-  .project-scaled {
-    transform: scale(1);
-  }
+    .content-subtitle {
+        top: 100px;
+    }
+    .projects {
+        grid-template-columns: 100%;
+    }
+    .project {
+        height: 350px;
+    }
+    .tour-content {
+        position: relative;
+        height: 100vh;
+        padding: 1%;
+    }
+    .project-scaled {
+        transform: scale(1);
+    }
 }
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 600px) {
-  .content-subtitle {
-    top: 100px;
-  }
-
-  .projects {
-    grid-template-columns: 100%;
-  }
-
-  .project {
-    height: 350px;
-  }
-
-  .project-scaled {
-    transform: scale(1);
-  }
-
-  .projects-one {
-    height: 400px;
-  }
+    .content-subtitle {
+        top: 100px;
+    }
+    .projects {
+        grid-template-columns: 100%;
+    }
+    .project {
+        height: 350px;
+    }
+    .project-scaled {
+        transform: scale(1);
+    }
+    .projects-one {
+        height: 400px;
+    }
 }
+
 
 /* Medium devices (landscape tablets, 768px and up) */
+
 @media only screen and (min-width: 768px) {
-  .content-subtitle {
-    top: 50px;
-  }
-
-  .projects {
-    grid-template-columns: 100%;
-  }
-
-  .project {
-    height: 350px;
-  }
-
-  .project-scaled {
-    transform: scale(1.5);
-  }
-
-  .projects-one {
-    height: 400px;
-  }
+    .content-subtitle {
+        top: 50px;
+    }
+    .projects {
+        grid-template-columns: 100%;
+    }
+    .project {
+        height: 350px;
+    }
+    .project-scaled {
+        transform: scale(1.5);
+    }
+    .projects-one {
+        height: 400px;
+    }
 }
 
+
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
-  .content-subtitle {
-    top: 50px;
-  } 
-
-  .projects {
-    grid-template-columns: 100%;
-  }
-
-  .project {
-    height: 250px;
-  }
-
-  .projects-one {
-    height: 350px;
-  }
+    .content-subtitle {
+        top: 50px;
+    }
+    .projects {
+        grid-template-columns: 100%;
+    }
+    .project {
+        height: 250px;
+    }
+    .projects-one {
+        height: 350px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-  .projects {
-    grid-template-columns: 50% 50%;
-  }
+    .projects {
+        grid-template-columns: 50% 50%;
+    }
 }

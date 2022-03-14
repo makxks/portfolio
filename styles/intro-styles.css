@@ -1,48 +1,58 @@
 /* --------------------------------------*/
+
+
 /* Intro styles */
+
+
 /* --------------------------------------*/
 
 #intro {
-  height: 88vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: var(--main-color);
-  padding-left: 10vw;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--main-color);
+    padding-left: 10vw;
 }
 
 #intro-line {
-  font-size: 7.5em;
-  margin-left: 0;
-  color: var(--main-text-color);
+    font-size: 7.5em;
+    margin-left: 0;
+    color: var(--main-text-color);
 }
 
-#intro h1, #intro h2 {
-  padding: 0;
+#intro h1,
+#intro h2 {
+    padding: 0;
 }
+
 
 /* --------------------------------------*/
+
+
 /* Intro styles media queries */
+
+
 /* --------------------------------------*/
+
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
-}
+@media only screen and (max-width: 600px) {}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
-}
+@media only screen and (min-width: 600px) {}
+
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
 
-}
+@media only screen and (min-width: 768px) {}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
 
-}
+@media only screen and (min-width: 992px) {}
